@@ -1,26 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Switch ,Route } from 'react-router-dom';
+
+import Header from "./components/Header"
+import HomePage from "./pages/HomePage"
+import GamePage from "./pages/GamePage"
+
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  return(
+    <div className="app">
+      <Header />
+      <Switch>
+        <Route exact path = "/">
+            <h1> Welcome To The Typing Game </h1>
+            <h2>You can choose your own challenge</h2>
+            <h3> Press "Next" for start </h3>
+        </Route>
+        <Route  path = "/home">
+            <HomePage />
+        </Route>
+        <Route path = "/game">
+            <GamePage />
+        </Route>
+      </Switch>
     </div>
-  );
+  )
 }
 
 export default App;
