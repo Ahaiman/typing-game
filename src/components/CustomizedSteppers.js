@@ -106,7 +106,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function getSteps() {
-  return ['Home', 'Time Submit', 'Game'];
+  return ['Home', 'Time Submittion', 'Game'];
 }
 
 function getLinks (){
