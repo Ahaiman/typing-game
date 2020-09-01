@@ -21,7 +21,7 @@ Goodluck!
 
 ## How Does It Looks Like?
 
-![ Home Page ](src/examples/1.png)
+![ Home Page ](src\examples\1.png)
 
 ![ Submit Time](src/examples/2.png)
 
