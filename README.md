@@ -21,11 +21,11 @@ Goodluck!
 
 ## How Does It Looks Like?
 
-![ Home Page ](src\examples\1.png)
+![ Home Page ](examples/1.png)
 
-![ Submit Time](src/examples/2.png)
+![ Submit Time](examples/2.png)
 
-![Game On!](src/examples/3.png)
+![Game On!](examples/3.png)
 
 ## Technology Wise
 
