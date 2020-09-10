@@ -94,6 +94,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
     backgroundColor: '#ca96d6',
+    color: 'red'
   },
   button: {
     marginRight: theme.spacing(1),
@@ -101,6 +102,11 @@ const useStyles = makeStyles((theme) => ({
   },
   step:{
     backgroundColor: '#FFEBCD',
+  },
+  label:{
+    color: 'black',
+    fontSize: '15px',
+    fontFamily : 'Comic Sans MS, cursive, sans-serif'
   }
 
 }));
@@ -137,7 +143,9 @@ const handleNext = () => {
         {steps.map((label) => (
             <Step key={label}>
               <StepLabel StepIconComponent={ColorlibStepIcon}>
-            {label}  
+                <div className = {classes.label} >
+                       {label}  
+                </div>
               </StepLabel>
             </Step>
         ))}
