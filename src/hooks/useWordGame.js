@@ -47,7 +47,7 @@ export default function useWordGame(startingTime = 10){
             , SECOND)
          }
        else if(remainingTime === FINISHING_TIME){
-          endGame()
+          endGame();
         }
        }, [remainingTime, isTimeRunning])
     

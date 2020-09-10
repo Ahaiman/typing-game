@@ -130,8 +130,6 @@ const handleNext = () => {
   const handleReset = () => {
     setActiveStep(0);
   };
-
-  const putLink = (linkNum) => links[linkNum] != null && links[linkNum];
   
   return (
     <div className= {classes.root}>
@@ -148,7 +146,7 @@ const handleNext = () => {
       <div>
         {activeStep === steps.length ? (
           <div>
-            <Link className = 'text-link' to = {putLink(0)}>
+            <Link className = 'text-link' to = {links[0]}>
               <Button 
               onClick={handleReset} 
               className={classes.button}
@@ -158,17 +156,18 @@ const handleNext = () => {
           </div>
         ) :
             (<div>
-                <Link className = 'text-link' to = {putLink(activeStep - 1)}>
-                  <Button 
-                  disabled={activeStep === 0} 
-                  color="secondary"
-                  variant="contained"
-                  onClick={handleBack} 
-                  className={classes.button}>Back</Button>
-                </Link>
-              
-              
-                 <Link className='text-link' to = {putLink(activeStep + 1)}>
+                <Link className = 'text-link' to = {
+                  location => ({...location, pathname: links[activeStep - 1]})}>
+                        <Button 
+                        disabled={activeStep === 0} 
+                        color="secondary"
+                        variant="contained"
+                        onClick={handleBack} 
+                        className={classes.button}>Back</Button>
+                </Link>  
+                 <Link className='text-link' to = {
+                  location => ({...location,
+                               pathname:  links[activeStep + 1]})}>
                     <Button
                     variant="contained"
                     color="secondary"
