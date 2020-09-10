@@ -1,5 +1,5 @@
 
-# How fast can you type?
+# How Fast Can You Type?
 
 ## The Typing Game
 
@@ -22,11 +22,11 @@ Good Luck!
 ## How Does It Looks Like?
 
 
-![ Home Page ](examples/1.png)
+## ![ Home Page ](examples/1.png)
 
-![ Submit Time](examples/2.png)
+## ![ Submit Time](examples/2.png)
 
-![Game On!](examples/3.png)
+## ![Game On!](examples/3.png)
 
 ## Technology Wise
 
@@ -39,7 +39,7 @@ The components are purely functional components.
 > - `react-router` - Routing 
 > - `React Redux` -  Maintaining global state between components
 > - ES6 logic
-> - Material-UI (makeStyles, withStyles)
+> - Material-UI (makeStyles, withStyles, useStyles)
 
 ## Running On Your Local Machine
 
