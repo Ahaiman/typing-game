@@ -10,7 +10,7 @@
 
 ## How Does It Work?
 
-To begin your challenge, you need to go through the "Time submittion" page.
+To begin your challenge, you need to go through the "Time Submittion" page.
 Use "Next" and "Back" buttons to navigate through the app.
 
 Once you are asked to submit your time, enter you choice (in seconds) and press "Submit".
